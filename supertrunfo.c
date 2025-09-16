@@ -7,14 +7,14 @@ int main() {
 
     char estado;
     char código[5]; // espaço para 4 caracteres + '\0'
-    char nome_da_cidade[20];
+    char nome_da_cidade[20]; // "_" usado para palavras com espaçamento
     int população;
     float área;
     float PIB;
     int pontos_turisticos;
 
-    // leitura do estado(uma letra)
-    printf("digite um estado: \n");
+
+    printf("digite um estado: \n");  // leitura do estado(uma letra)
     scanf(" %c", &estado); // lê um caractere  
     printf("estado: %c\n", estado);
 
@@ -47,6 +47,56 @@ int main() {
     printf("quantidade de pontos turisticos:");
     scanf("%d", &pontos_turisticos); 
     printf("pontos_turisticos: %d\n", pontos_turisticos);
+
+
+   // carta:2
+
+   char estado;
+   char código[5];
+   char nome_da_cidade[20];
+   int população;
+   float área;
+   float PIB;
+   int pontos_turísticos;
+
+   printf("digite o estado:");
+   scanf(" %c", &estado);
+   printf("estado: %c\n", estado");
+
+
+   printf("digite o código:");
+   scanf(" %s", código); 
+   printf("código: %s\n", código);
+
+   int c; 
+   while((c = getchar()) != '\n' && c !=EOF);
+
+   printf("digite a cidade:");
+   fgets(nome_da_cidade, sizeof(nome_da_cidade), stdin); // lê toda a frase incluindo espaços
+  nome_da_cidade[strcspn(nome_da_cidade, "\n")] = '\0'; // remover \n 
+
+
+   printf("digite a populaçaão:");
+   scanf(" %d", &população);
+   printf("população: %d\n", população);
+
+
+   printf("digite a área:");
+   scanf("%f", &área);
+   printf("população: %.2f\n", população);
+
+
+   printf("digite o PIB:");
+   scanf("%f", &PIB);
+   printf("PIB: %.2f\n", PIB);
+
+
+   printf(" pontos turisticos:");
+   scanf("%d", &pontos_turisticos);
+   printf("pontos_turisticos: %d\n", pontos_turisticos);
+
+
+
 
 
 
