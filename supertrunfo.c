@@ -90,16 +90,13 @@ int main() {
 
 
    printf("digite o PIB:");
-   scanf("%f", &PIB2); // ê um número decimal 
+   scanf("%f", &PIB2); // lê um número decimal 
    printf("PIB: %.2f\n", PIB2);
 
 
    printf("digite os pontos turisticos:");
    scanf("%d", &pontos_turisticos2);
    printf("pontos_turisticos: %d\n", pontos_turisticos2);
-
-
-
 
 
 
