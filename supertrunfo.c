@@ -51,61 +51,56 @@ int main() {
 
    // carta:2
 
-   char estado;
-   char código[5];
-   char nome_da_cidade[20];
-   int população;
-   float área;
-   float PIB;
-   int pontos_turísticos;
+   char estado2;
+   char codigo2[5];
+   char nome_da_cidade2[25];
+   int populaçao2;
+   float area2;
+   float PIB2;
+   int pontos_turisticos2;
 
    printf("digite o estado:");
-   scanf(" %c", &estado);
-   printf("estado: %c\n", estado");
+   scanf(" %c", &estado2);
+   printf("estado: %c\n", estado2);
 
 
-   printf("digite o código:");
-   scanf(" %s", código); 
-   printf("código: %s\n", código);
+   printf("digite o codigo:");
+   scanf(" %s", codigo2); 
+   printf("codigo: %s\n", codigo2);
 
-   int c; 
-   while((c = getchar()) != '\n' && c !=EOF);
+   // limpar buffer antes de usar o fgets
+
+   int d;
+   while ((d = getchar()) != '\n' && d != EOF);
 
    printf("digite a cidade:");
-   fgets(nome_da_cidade, sizeof(nome_da_cidade), stdin); // lê toda a frase incluindo espaços
-  nome_da_cidade[strcspn(nome_da_cidade, "\n")] = '\0'; // remover \n 
+   fgets(nome_da_cidade2, sizeof(nome_da_cidade2), stdin); // lê toda a frase incluindo espaços
+   nome_da_cidade2[strcspn(nome_da_cidade2, "\n")] = '\0'; // remover \n 
+   printf("nome da cidade: %s\n", nome_da_cidade); // mostra o nome da cidade digitada
 
 
-   printf("digite a populaçaão:");
-   scanf(" %d", &população);
-   printf("população: %d\n", população);
+   printf("digite a populaçao:");
+   scanf(" %d", &populaçao2); // lê um número inteiro
+   printf("populaçao: %d\n", populaçao2);
 
 
-   printf("digite a área:");
-   scanf("%f", &área);
-   printf("população: %.2f\n", população);
+   printf("digite a area:");
+   scanf("%f", &area2);
+   printf("area: %.2f\n", area2);
 
 
    printf("digite o PIB:");
-   scanf("%f", &PIB);
-   printf("PIB: %.2f\n", PIB);
+   scanf("%f", &PIB2); // ê um número decimal 
+   printf("PIB: %.2f\n", PIB2);
 
 
-   printf(" pontos turisticos:");
-   scanf("%d", &pontos_turisticos);
-   printf("pontos_turisticos: %d\n", pontos_turisticos);
-
-
-
+   printf("digite os pontos turisticos:");
+   scanf("%d", &pontos_turisticos2);
+   printf("pontos_turisticos: %d\n", pontos_turisticos2);
 
 
 
 
-
-
-
-
-    
 
 
 
